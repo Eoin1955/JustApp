@@ -39,8 +39,5 @@ public class Fries implements Food{
         return description;
     }
 
-    public void addSalt()
-    {
 
-    }
 }

@@ -35,7 +35,4 @@ public class Burger implements Food {
         this.description = description;
     }
 
-    public void addSause(String sause){
-
-    }
 }

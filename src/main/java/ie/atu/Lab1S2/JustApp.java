@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class JustApp {
     public static void main(String[] args) {
         ArrayList<Food> items = new ArrayList<>();
+        float totalPrice = 0;
 
         System.out.println("Welcome to Just App");
         System.out.println("You ordered: ");
@@ -33,9 +34,10 @@ public class JustApp {
             System.out.println("");
         }
 
-
-        //find the total cost of the whole order
-
+        for(Food item: items){
+            totalPrice += item.getPrice();
+        }
+        System.out.println("Your total Price: €" + totalPrice);
 
         }
     }
